@@ -2,6 +2,7 @@ cfndsl
 ======
 
 [![Spec](https://github.com/cfndsl/cfndsl/actions/workflows/spec.yml/badge.svg)](https://github.com/cfndsl/cfndsl/actions/workflows/spec.yml)
+[![CFN Nightly](https://github.com/cfndsl/cfndsl/actions/workflows/spec_latest.yml/badge.svg)](https://github.com/cfndsl/cfndsl/actions/workflows/spec_latest.yml)
 [![Gem Version](https://badge.fury.io/rb/cfndsl.png)](http://badge.fury.io/rb/cfndsl)
 
 [AWS Cloudformation](http://docs.amazonwebservices.com/AWSCloudFormation/latest/UserGuide/GettingStarted.html) templates are an incredibly powerful way to build
@@ -29,13 +30,13 @@ Example for doing it system wide Ruby
 
     sudo gem install cfndsl
 
-Update the the cloudformation specification to the latest version.
+Update the cloudformation specification to the latest version.
 
     cfndsl -u
 
-or update to a specific version
+or update to a specific version, and/or from a different region.
 
-    cfndsl -u 7.1.0
+    cfndsl -u 7.1.0 --region ap-southeast-2
 
 Now write a template in the dsl
 
